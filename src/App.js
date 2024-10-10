@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+// src/App.js
+
+import React, { useState, useEffect } from 'react';
+import WebcamCapture from './components/WebcamCapture.js';
+import normalImage from './assets/normal_image.png';
+import ghostImage from './assets/ghost_image.png';
+import ghostSound from './assets/ghost_sound.mp3';
 import './App.css';
 
 function App() {
+  const [isHumanDetected, setIsHumanDetected] = useState(false);
+  const [audio] = useState(new Audio(ghostSound));
+
+  useEffect(() => {
+    if (isHumanDetected) {
+      audio.play();
+    } else {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  }, [isHumanDetected, audio]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WebcamCapture onDetect={setIsHumanDetected} />
+      <img
+        src={isHumanDetected ? ghostImage : normalImage}
+        alt="Display"
+        className="display-image"
+      />
     </div>
   );
 }
