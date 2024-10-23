@@ -25,3 +25,16 @@ body {
     text-wrap: balance;
   }
 }
+
+.relative-parent {
+  position: relative;
+}
+
+.center-absolute {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-inline: auto;
+  z-index: 1;
+}

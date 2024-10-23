@@ -1,16 +1,22 @@
-import localFont from "next/font/local";
 import "./globals.css";
+import { Inter, Creepster, Rubik_Wet_Paint } from '@next/font/google'
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const inter = Inter({
+  subsets: ['latin'],
+  variable: "--font-inter",
+})
+
+const creepster = Creepster({
+  subsets: ['latin'],
+  weight: [ '400'],
+  variable: "--font-creepster",
+})
+
+const rubik = Rubik_Wet_Paint({
+  subsets: ['latin'],
+  weight: [ '400'],
+  variable: "--font-rubik",
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -19,9 +25,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${creepster.variable} ${rubik.variable} antialiased`}
       >
         {children}
       </body>

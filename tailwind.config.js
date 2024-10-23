@@ -11,6 +11,11 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        creepster: ['var(--font-creepster)'],
+        rubik: ['var(--font-rubik)'],
+        sans: ["var(--font-inter)"],
+      }
     },
   },
   plugins: [],
