@@ -40,7 +40,7 @@ export default function Home() {
           ref={videoRef}
           className={`${humanDetected ? '' : 'hidden'} w-9/12 sm:h-screen`}
           autoPlay
-          muted
+          // muted
           onPlaying={() => setIsVideoPlaying(true)}
           onEnded={() => setIsVideoPlaying(false)}
         >
