@@ -68,16 +68,17 @@ const Quiz = () => {
   }, [timeRemaining, imageLoaded]);
 
   const handleAnswer = (choice) => {
+    setImageLoaded(false)
     if (Math.random() > 0.5) {
       laugh1.current.play();
     } else {
       laugh2.current.play();
     }
-    if (choice === currentQuestion.answer) {
-      setCorrectAnswers(correctAnswers + 1);
-    }
 
     setTimeout(() => {
+      if (choice === currentQuestion.answer) {
+        setCorrectAnswers(correctAnswers + 1);
+      }
       if (currentQuestionIndex + 1 < 3) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
         loadQuestion(questions[currentQuestionIndex + 1]);
@@ -104,15 +105,15 @@ const Quiz = () => {
       <BloodTrailCursor />
       <div className="bg-gray-800 h-16 sticky top-0 p-2">
         <Status
-          currentQuestion={`${currentQuestionIndex + 1} (ID: ${currentQuestion.image.replace('/images/', '').replace('.png', '')})`}
-          correctAnswers={correctAnswers}
+          currentQuestion={currentQuestionIndex + 1}
+          correctAnswers={`${correctAnswers}/${currentQuestionIndex}`}
           timeRemaining={timeRemaining}
         />
       </div>
       <div className="flex flex-col justify-center items-center h-full">
         {!showChoices ? (
           <div className="flex-grow flex items-center justify-center w-full p-4">
-            <div className="relative w-full" style={{ height: '90vh' }}>
+            <div className="relative w-full" style={{ height: '80vh' }}>
               <Image
                 src={currentQuestion.image}
                 alt="Quiz Image"
