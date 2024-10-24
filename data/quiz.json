@@ -158,59 +158,59 @@
   {
     "question": "How many sunburn?",
     "image": "/images/Q00013.png",
-    "duration": 10,
+    "duration": 30,
     "choices": [
       "7",
       "8",
       "9",
       "10"
     ],
-    "difficulty": "easy",
-    "answer": ""
+    "difficulty": "hard",
+    "answer": "10"
   },
   {
     "question": "How many striped towels are used as mats?",
     "image": "/images/Q00014.png",
-    "duration": 10,
+    "duration": 30,
     "choices": [
       "0",
       "1",
       "2",
       "3"
     ],
-    "difficulty": "medium",
-    "answer": ""
+    "difficulty": "hard",
+    "answer": "2"
   },
   {
     "question": "There is a guy in a suit, what colour is his coat?",
     "image": "/images/Q00015.png",
-    "duration": 10,
+    "duration": 30,
     "choices": [
       "Grey",
       "White",
       "Blue",
       "Green"
     ],
-    "difficulty": "medium",
-    "answer": ""
+    "difficulty": "hard",
+    "answer": "Grey"
   },
   {
     "question": "How many umbrellas are there?",
     "image": "/images/Q00016.png",
-    "duration": 10,
+    "duration": 30,
     "choices": [
       "2",
       "3",
       "4",
       "5"
     ],
-    "difficulty": "medium",
-    "answer": ""
+    "difficulty": "hard",
+    "answer": "4"
   },
   {
     "question": "What number is on the bull stamp?",
     "image": "/images/Q00017.png",
-    "duration": 10,
+    "duration": 30,
     "choices": [
       "19",
       "27",
@@ -218,12 +218,12 @@
       "38"
     ],
     "difficulty": "hard",
-    "answer": ""
+    "answer": "29"
   },
   {
     "question": "How many striped towels are used as mats?",
     "image": "/images/Q00018.png",
-    "duration": 10,
+    "duration": 30,
     "choices": [
       "0",
       "1",
@@ -231,12 +231,12 @@
       "3"
     ],
     "difficulty": "hard",
-    "answer": ""
+    "answer": "2"
   },
   {
     "question": "There is a guy in a suit, what colour is his coat?",
     "image": "/images/Q00019.png",
-    "duration": 10,
+    "duration": 30,
     "choices": [
       "Grey",
       "White",
@@ -244,12 +244,12 @@
       "Green"
     ],
     "difficulty": "hard",
-    "answer": ""
+    "answer": "Grey"
   },
   {
     "question": "How many umbrellas are there?",
     "image": "/images/Q00020.png",
-    "duration": 10,
+    "duration": 30,
     "choices": [
       "2",
       "3",
@@ -257,7 +257,7 @@
       "5"
     ],
     "difficulty": "hard",
-    "answer": ""
+    "answer": "4"
   },
   {
     "question": "What shirt colour does the man in the boat wear?",
