@@ -95,7 +95,7 @@ const Quiz = () => {
     return <Result correctAnswers={correctAnswers} />;
   }
 
-  if (!currentQuestion) return <div>Loading...</div>;
+  if (!currentQuestion) return <p className='text-center m-5'>Loading...</p>;
 
   return (
     <div className="relative h-screen overflow-hidden">
@@ -114,6 +114,7 @@ const Quiz = () => {
         {!showChoices ? (
           <div className="flex-grow flex items-center justify-center w-full p-4">
             <div className="relative w-full" style={{ height: '80vh' }}>
+              {!imageLoaded && <p className='text-center m-5'>Loading your eerie drawing...</p>}
               <Image
                 src={currentQuestion.image}
                 alt="Quiz Image"
