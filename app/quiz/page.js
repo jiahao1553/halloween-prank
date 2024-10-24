@@ -22,8 +22,8 @@ const Quiz = () => {
   const laugh2 = useRef(null);
 
   // Function to get random question of specific difficulty
-  const getRandomQuestionByDifficulty = (difficulty) => {
-    const questionsOfDifficulty = quizData.filter(q => q.difficulty === difficulty);
+  const getRandomQuestionByDifficulty = (difficulty, questionsToExclude = []) => {
+    const questionsOfDifficulty = quizData.filter(q => q.difficulty === difficulty && !questionsToExclude.includes(q));
     const randomIndex = Math.floor(Math.random() * questionsOfDifficulty.length);
     return questionsOfDifficulty[randomIndex];
   };
@@ -32,9 +32,20 @@ const Quiz = () => {
   useEffect(() => {
     const selectedQuestions = [
       getRandomQuestionByDifficulty('easy'),
+      getRandomQuestionByDifficulty('easy'),
+      getRandomQuestionByDifficulty('easy'),
       getRandomQuestionByDifficulty('medium'),
       getRandomQuestionByDifficulty('hard')
     ];
+
+    // Check for duplicate questions
+    while (new Set(selectedQuestions).size !== 5) {
+      const duplicates = selectedQuestions.filter((item, index) => selectedQuestions.indexOf(item) !== index);
+      const duplicateIndex = selectedQuestions.indexOf(duplicates[0]);
+      const newQuestion = getRandomQuestionByDifficulty(selectedQuestions[duplicateIndex].difficulty, selectedQuestions);
+      selectedQuestions[duplicateIndex] = newQuestion;
+    }
+
     setQuestions(selectedQuestions);
     loadQuestion(selectedQuestions[0]);
   }, []);
@@ -79,7 +90,7 @@ const Quiz = () => {
       if (choice === currentQuestion.answer) {
         setCorrectAnswers(correctAnswers + 1);
       }
-      if (currentQuestionIndex + 1 < 3) {
+      if (currentQuestionIndex + 1 < 5) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
         loadQuestion(questions[currentQuestionIndex + 1]);
       } else {
@@ -92,7 +103,7 @@ const Quiz = () => {
   };
 
   if (showResult) {
-    return <Result correctAnswers={correctAnswers} />;
+    return <Result correctAnswers={correctAnswers} totalQuestions={5} />;
   }
 
   if (!currentQuestion) return <p className='text-center m-5'>Loading...</p>;

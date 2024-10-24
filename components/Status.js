@@ -1,8 +1,4 @@
-import { useRouter } from 'next/navigation';
-
 const Status = ({ currentQuestion, timeRemaining, correctAnswers }) => {
-  const router = useRouter();
-
   return (
     <header className="flex justify-between font-rubik">
       <div className="text-left">
