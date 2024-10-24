@@ -10,7 +10,7 @@
       "Blue"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Yellow"
   },
   {
     "question": "What fruit is in the scene?",
@@ -23,7 +23,7 @@
       "Pineapple"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Pineapple"
   },
   {
     "question": "How many picture frames are there?",
@@ -36,7 +36,7 @@
       "5"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "3"
   },
   {
     "question": "What colours are the sofas?",
@@ -49,7 +49,7 @@
       "Yellow and Red"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Pink and Yellow"
   },
   {
     "question": "What instrument do you see?",
@@ -62,7 +62,7 @@
       "Drums"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Guitar"
   },
   {
     "question": "How many potted plants can you spot?",
@@ -75,7 +75,7 @@
       "5"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "5"
   },
   {
     "question": "What animal do you see?",
@@ -88,7 +88,7 @@
       "Fish"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Dog"
   },
   {
     "question": "The animal is behind a ______",
@@ -101,7 +101,7 @@
       "Laptop"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Laptop"
   },
   {
     "question": "How many people do you see in the picture?",
@@ -114,7 +114,7 @@
       "4"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "1"
   },
   {
     "question": "What toy do you see on the bar chair?",
@@ -126,8 +126,8 @@
       "Doll",
       "Building blocks"
     ],
-    "difficulty": "easy",
-    "answer": ""
+    "difficulty": "medium",
+    "answer": "Teddy bear"
   },
   {
     "question": "What is the design on the leftmost door?",
@@ -139,8 +139,8 @@
       "Oval",
       "Square"
     ],
-    "difficulty": "easy",
-    "answer": ""
+    "difficulty": "medium",
+    "answer": "Heart"
   },
   {
     "question": "What colour are the tablecloths?",
@@ -153,7 +153,7 @@
       "Blue"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Blue"
   },
   {
     "question": "How many sunburn?",
@@ -270,7 +270,7 @@
       "White"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Blue"
   },
   {
     "question": "What did the man bring to the hilltop?",
@@ -282,7 +282,7 @@
       "Suitcase and flag"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Suitcase, chair and umbrella"
   },
   {
     "question": "How many cows are there in the picture?",
@@ -295,20 +295,20 @@
       "No cows"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Two"
   },
   {
     "question": "How many sheep with black faces are there?",
     "image": "/images/Q00024.png",
-    "duration": 10,
+    "duration": 15,
     "choices": [
       "7",
       "8",
       "9",
       "10"
     ],
-    "difficulty": "easy",
-    "answer": ""
+    "difficulty": "medium",
+    "answer": "10"
   },
   {
     "question": "How many people are there in the drawing? ",
@@ -321,7 +321,7 @@
       "7"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "6"
   },
   {
     "question": "What are people doing near the tree?",
@@ -333,7 +333,7 @@
       "Drinking, eating and sleeping"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Drinking, eating and sleeping"
   },
   {
     "question": "What colour socks does the lady wear?",
@@ -346,50 +346,50 @@
       "Brown"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Grey"
   },
   {
     "question": "What is the man with black hat in the bottom right doing? ",
     "image": "/images/Q00028.png",
-    "duration": 10,
+    "duration": 15,
     "choices": [
       "Smoking",
       "Writing",
       "Drinking"
     ],
-    "difficulty": "easy",
-    "answer": ""
+    "difficulty": "medium",
+    "answer": "Smoking"
   },
   {
     "question": "What other animals are in the drawing, apart from humans?",
     "image": "/images/Q00029.png",
-    "duration": 10,
+    "duration": 15,
     "choices": [
       "Dog",
       "Cat and dog",
       "Dog and cow",
       "Cat and horse"
     ],
-    "difficulty": "easy",
-    "answer": ""
+    "difficulty": "medium",
+    "answer": "Cat and horse"
   },
   {
     "question": "How many animals are there in the drawing?",
     "image": "/images/Q00030.png",
-    "duration": 10,
+    "duration": 15,
     "choices": [
       "3",
       "4",
       "5",
       "6"
     ],
-    "difficulty": "easy",
-    "answer": ""
+    "difficulty": "medium",
+    "answer": "5"
   },
   {
-    "question": "What animal are not in the drawing?",
+    "question": "What animal are NOT in the drawing?",
     "image": "/images/Q00031.png",
-    "duration": 10,
+    "duration": 15,
     "choices": [
       "Fish",
       "Boar",
@@ -397,7 +397,7 @@
       "Sheep"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Horse"
   },
   {
     "question": "How many people are there in the drawing?",
@@ -410,7 +410,7 @@
       "4"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "3"
   },
   {
     "question": "What is not shown in the drawing?",
@@ -423,12 +423,12 @@
       "Horse riding"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Horse riding"
   },
   {
     "question": "How much is the drink in the bar, Phillies? ",
     "image": "/images/Q00034.png",
-    "duration": 10,
+    "duration": 15,
     "choices": [
       "5 cents",
       "10 cents",
@@ -436,7 +436,7 @@
       "20 cents"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "5 cents"
   },
   {
     "question": "What does the woman do?",
@@ -448,7 +448,7 @@
       "Looking at the pond"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Drawing"
   },
   {
     "question": "How many women are carrying children on their backs?",
@@ -461,7 +461,7 @@
       "4"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "2"
   },
   {
     "question": "What does the man in the boat do?",
@@ -473,7 +473,7 @@
       "Playing with dog"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Shooting bird"
   },
   {
     "question": "What is the colour of the horse carriage?",
@@ -486,7 +486,7 @@
       "Red"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Red"
   },
   {
     "question": "How many horses are there in the drawing?",
@@ -499,7 +499,7 @@
       "4"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "2"
   },
   {
     "question": "How many ships are depicted in the drawing?",
@@ -512,12 +512,12 @@
       "3"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "1"
   },
   {
     "question": "How many boats are there in the drawing?",
     "image": "/images/Q00041.png",
-    "duration": 10,
+    "duration": 15,
     "choices": [
       "No boat",
       "1",
@@ -525,10 +525,10 @@
       "3"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "1"
   },
   {
-    "question": "What is not depicted in the drawing?",
+    "question": "What is NOT depicted in the drawing?",
     "image": "/images/Q00042.png",
     "duration": 10,
     "choices": [
@@ -537,10 +537,10 @@
       "Ocean"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Ocean"
   },
   {
-    "question": "What is not depicted in the drawing?",
+    "question": "What is NOT depicted in the drawing?",
     "image": "/images/Q00043.png",
     "duration": 10,
     "choices": [
@@ -549,7 +549,7 @@
       "Ocean"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Ocean"
   },
   {
     "question": "What is the colour of vase at the top left?",
@@ -562,33 +562,33 @@
       "White"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Green"
   },
   {
-    "question": "What is the artist’s name?",
+    "question": "What is the artist's name?",
     "image": "/images/Q00045.png",
-    "duration": 10,
+    "duration": 20,
     "choices": [
       "John George Brown",
       "George Inness",
       "Joseph Decker",
       "Thomas B. Clarke"
     ],
-    "difficulty": "easy",
-    "answer": ""
+    "difficulty": "hard",
+    "answer": "Joseph Decker"
   },
   {
     "question": "In what year did Vincent van Gogh draw the drawing?",
     "image": "/images/Q00046.png",
-    "duration": 10,
+    "duration": 15,
     "choices": [
       "1886",
       "1887",
       "1888",
       "1889"
     ],
-    "difficulty": "easy",
-    "answer": ""
+    "difficulty": "medium",
+    "answer": "1889"
   },
   {
     "question": "What season is depicted in the drawing?",
@@ -601,7 +601,7 @@
       "Winter"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Autumn"
   },
   {
     "question": "Where is the screaming man?",
@@ -614,7 +614,7 @@
       "In a jungle"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "On a bridge"
   },
   {
     "question": "What are the 2 white colour animal?",
@@ -626,7 +626,7 @@
       "Birds"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Swans"
   },
   {
     "question": "What is the colour of the frame?",
@@ -639,7 +639,7 @@
       "White"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Black"
   },
   {
     "question": "What animal is with the woman?",
@@ -652,6 +652,6 @@
       "Black cat"
     ],
     "difficulty": "easy",
-    "answer": ""
+    "answer": "Black dog"
   }
 ]

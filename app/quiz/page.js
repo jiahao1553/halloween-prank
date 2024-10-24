@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import quizData from '@/data/quiz.json';
 import Status from '@/components/Status';
@@ -17,6 +17,9 @@ const Quiz = () => {
   const [showChoices, setShowChoices] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(0);
+  const tick = useRef(null);
+  const laugh1 = useRef(null);
+  const laugh2 = useRef(null);
 
   // Function to get random question of specific difficulty
   const getRandomQuestionByDifficulty = (difficulty) => {
@@ -40,16 +43,20 @@ const Quiz = () => {
     setCurrentQuestion(question);
     setTimeRemaining(question.duration);
     setShowChoices(false);
-    setTimeout(() => {
-      setShowChoices(true);
-    }, question.duration * 1000);
   };
+
   const handleImageLoad = () => {
     setImageLoaded(true);
+    setTimeout(() => {
+      setShowChoices(true);
+    }, currentQuestion.duration * 1000);
   };
 
   useEffect(() => {
     const timer = setInterval(() => {
+      if (imageLoaded && timeRemaining > 1) {
+        tick.current.play();
+      }
       if (imageLoaded && timeRemaining > 0) {
         setTimeRemaining(timeRemaining - 1);
       }
@@ -61,6 +68,11 @@ const Quiz = () => {
   }, [timeRemaining, imageLoaded]);
 
   const handleAnswer = (choice) => {
+    if (Math.random() > 0.5) {
+      laugh1.current.play();
+    } else {
+      laugh2.current.play();
+    }
     if (choice === currentQuestion.answer) {
       setCorrectAnswers(correctAnswers + 1);
     }
@@ -86,7 +98,10 @@ const Quiz = () => {
 
   return (
     <div className="relative h-screen overflow-hidden">
-      <BloodTrailCursor/>
+      <audio src='/assets/tick.mp3' ref={tick} />
+      <audio src='/assets/laugh1.mp3' ref={laugh1} />
+      <audio src='/assets/laugh2.mp3' ref={laugh2} />
+      <BloodTrailCursor />
       <div className="bg-gray-800 h-16 sticky top-0 p-2">
         <Status
           currentQuestion={`${currentQuestionIndex + 1} (ID: ${currentQuestion.image.replace('/images/', '').replace('.png', '')})`}
