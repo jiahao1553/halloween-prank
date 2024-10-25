@@ -1,0 +1,657 @@
+[
+  {
+    "question": "What colour is the umbrella?",
+    "image": "/images/Q00001.png",
+    "duration": 10,
+    "choices": [
+      "Red",
+      "Pink",
+      "Yellow",
+      "Blue"
+    ],
+    "difficulty": "easy",
+    "answer": "Yellow"
+  },
+  {
+    "question": "What fruit is in the scene?",
+    "image": "/images/Q00002.png",
+    "duration": 10,
+    "choices": [
+      "Coconut",
+      "Peach",
+      "Banana",
+      "Pineapple"
+    ],
+    "difficulty": "easy",
+    "answer": "Pineapple"
+  },
+  {
+    "question": "How many picture frames are there?",
+    "image": "/images/Q00003.png",
+    "duration": 10,
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "difficulty": "easy",
+    "answer": "3"
+  },
+  {
+    "question": "What colours are the sofas?",
+    "image": "/images/Q00004.png",
+    "duration": 10,
+    "choices": [
+      "Pink and Yellow",
+      "Pink and Blue",
+      "Blue and Yellow",
+      "Yellow and Red"
+    ],
+    "difficulty": "easy",
+    "answer": "Pink and Yellow"
+  },
+  {
+    "question": "What instrument do you see?",
+    "image": "/images/Q00005.png",
+    "duration": 10,
+    "choices": [
+      "Guitar",
+      "Violin",
+      "Piano",
+      "Drums"
+    ],
+    "difficulty": "easy",
+    "answer": "Guitar"
+  },
+  {
+    "question": "How many potted plants can you spot?",
+    "image": "/images/Q00006.png",
+    "duration": 10,
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "difficulty": "easy",
+    "answer": "5"
+  },
+  {
+    "question": "What animal do you see?",
+    "image": "/images/Q00007.png",
+    "duration": 10,
+    "choices": [
+      "Cat",
+      "Dog",
+      "Hamster",
+      "Fish"
+    ],
+    "difficulty": "easy",
+    "answer": "Dog"
+  },
+  {
+    "question": "The animal is behind a ______",
+    "image": "/images/Q00008.png",
+    "duration": 10,
+    "choices": [
+      "Backpack",
+      "Plastic bag",
+      "Potted plant",
+      "Laptop"
+    ],
+    "difficulty": "easy",
+    "answer": "Laptop"
+  },
+  {
+    "question": "How many people do you see in the picture?",
+    "image": "/images/Q00009.png",
+    "duration": 10,
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "difficulty": "easy",
+    "answer": "1"
+  },
+  {
+    "question": "What toy do you see on the bar chair?",
+    "image": "/images/Q00010.png",
+    "duration": 10,
+    "choices": [
+      "Ball",
+      "Teddy bear",
+      "Doll",
+      "Building blocks"
+    ],
+    "difficulty": "medium",
+    "answer": "Teddy bear"
+  },
+  {
+    "question": "What is the design on the leftmost door?",
+    "image": "/images/Q00011.png",
+    "duration": 10,
+    "choices": [
+      "Circle",
+      "Heart",
+      "Oval",
+      "Square"
+    ],
+    "difficulty": "medium",
+    "answer": "Heart"
+  },
+  {
+    "question": "What colour are the tablecloths?",
+    "image": "/images/Q00012.png",
+    "duration": 10,
+    "choices": [
+      "Yellow",
+      "Orange",
+      "Brown",
+      "Blue"
+    ],
+    "difficulty": "easy",
+    "answer": "Blue"
+  },
+  {
+    "question": "How many sunburn?",
+    "image": "/images/Q00013.png",
+    "duration": 30,
+    "choices": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "difficulty": "hard",
+    "answer": "10"
+  },
+  {
+    "question": "How many striped towels are used as mats?",
+    "image": "/images/Q00014.png",
+    "duration": 30,
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "difficulty": "hard",
+    "answer": "2"
+  },
+  {
+    "question": "There is a guy in a suit, what colour is his coat?",
+    "image": "/images/Q00015.png",
+    "duration": 30,
+    "choices": [
+      "Grey",
+      "White",
+      "Blue",
+      "Green"
+    ],
+    "difficulty": "hard",
+    "answer": "Grey"
+  },
+  {
+    "question": "How many umbrellas are there?",
+    "image": "/images/Q00016.png",
+    "duration": 30,
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "difficulty": "hard",
+    "answer": "4"
+  },
+  {
+    "question": "What number is on the bull stamp?",
+    "image": "/images/Q00017.png",
+    "duration": 30,
+    "choices": [
+      "19",
+      "27",
+      "29",
+      "38"
+    ],
+    "difficulty": "hard",
+    "answer": "29"
+  },
+  {
+    "question": "How many striped towels are used as mats?",
+    "image": "/images/Q00018.png",
+    "duration": 30,
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "difficulty": "hard",
+    "answer": "2"
+  },
+  {
+    "question": "There is a guy in a suit, what colour is his coat?",
+    "image": "/images/Q00019.png",
+    "duration": 30,
+    "choices": [
+      "Grey",
+      "White",
+      "Blue",
+      "Green"
+    ],
+    "difficulty": "hard",
+    "answer": "Grey"
+  },
+  {
+    "question": "How many umbrellas are there?",
+    "image": "/images/Q00020.png",
+    "duration": 30,
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "difficulty": "hard",
+    "answer": "4"
+  },
+  {
+    "question": "What shirt colour does the man in the boat wear?",
+    "image": "/images/Q00021.png",
+    "duration": 10,
+    "choices": [
+      "Green",
+      "Red",
+      "Blue",
+      "White"
+    ],
+    "difficulty": "easy",
+    "answer": "Blue"
+  },
+  {
+    "question": "What did the man bring to the hilltop?",
+    "image": "/images/Q00022.png",
+    "duration": 10,
+    "choices": [
+      "Suitcase and chair",
+      "Suitcase, chair and umbrella",
+      "Suitcase and flag"
+    ],
+    "difficulty": "easy",
+    "answer": "Suitcase, chair and umbrella"
+  },
+  {
+    "question": "How many cows are there in the picture?",
+    "image": "/images/Q00023.png",
+    "duration": 10,
+    "choices": [
+      "One",
+      "Two",
+      "Three",
+      "No cows"
+    ],
+    "difficulty": "easy",
+    "answer": "Two"
+  },
+  {
+    "question": "How many sheep with black faces are there?",
+    "image": "/images/Q00024.png",
+    "duration": 15,
+    "choices": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "difficulty": "medium",
+    "answer": "10"
+  },
+  {
+    "question": "How many people are there in the drawing? ",
+    "image": "/images/Q00025.png",
+    "duration": 10,
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "difficulty": "easy",
+    "answer": "6"
+  },
+  {
+    "question": "What are people doing near the tree?",
+    "image": "/images/Q00026.png",
+    "duration": 10,
+    "choices": [
+      "Drinking",
+      "Drinking and eating",
+      "Drinking, eating and sleeping"
+    ],
+    "difficulty": "easy",
+    "answer": "Drinking, eating and sleeping"
+  },
+  {
+    "question": "What colour socks does the lady wear?",
+    "image": "/images/Q00027.png",
+    "duration": 10,
+    "choices": [
+      "Grey",
+      "White",
+      "Black",
+      "Brown"
+    ],
+    "difficulty": "easy",
+    "answer": "Grey"
+  },
+  {
+    "question": "What is the man with black hat in the bottom right doing? ",
+    "image": "/images/Q00028.png",
+    "duration": 15,
+    "choices": [
+      "Smoking",
+      "Writing",
+      "Drinking"
+    ],
+    "difficulty": "medium",
+    "answer": "Smoking"
+  },
+  {
+    "question": "What other animals are in the drawing, apart from humans?",
+    "image": "/images/Q00029.png",
+    "duration": 15,
+    "choices": [
+      "Dog",
+      "Cat and dog",
+      "Dog and cow",
+      "Cat and horse"
+    ],
+    "difficulty": "medium",
+    "answer": "Cat and horse"
+  },
+  {
+    "question": "How many animals are there in the drawing?",
+    "image": "/images/Q00030.png",
+    "duration": 15,
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "difficulty": "medium",
+    "answer": "5"
+  },
+  {
+    "question": "What animal are NOT in the drawing?",
+    "image": "/images/Q00031.png",
+    "duration": 15,
+    "choices": [
+      "Fish",
+      "Boar",
+      "Horse",
+      "Sheep"
+    ],
+    "difficulty": "easy",
+    "answer": "Horse"
+  },
+  {
+    "question": "How many people are there in the drawing?",
+    "image": "/images/Q00032.png",
+    "duration": 10,
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "difficulty": "easy",
+    "answer": "3"
+  },
+  {
+    "question": "What is not shown in the drawing?",
+    "image": "/images/Q00033.png",
+    "duration": 10,
+    "choices": [
+      "War",
+      "Running dog",
+      "Boat",
+      "Horse riding"
+    ],
+    "difficulty": "easy",
+    "answer": "Horse riding"
+  },
+  {
+    "question": "How much is the drink in the bar, Phillies? ",
+    "image": "/images/Q00034.png",
+    "duration": 15,
+    "choices": [
+      "5 cents",
+      "10 cents",
+      "15 cents",
+      "20 cents"
+    ],
+    "difficulty": "easy",
+    "answer": "5 cents"
+  },
+  {
+    "question": "What does the woman do?",
+    "image": "/images/Q00035.png",
+    "duration": 10,
+    "choices": [
+      "Drawing",
+      "Reading",
+      "Looking at the pond"
+    ],
+    "difficulty": "easy",
+    "answer": "Reading"
+  },
+  {
+    "question": "How many women are carrying children on their backs?",
+    "image": "/images/Q00036.png",
+    "duration": 10,
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "difficulty": "easy",
+    "answer": "2"
+  },
+  {
+    "question": "What does the man in the boat do?",
+    "image": "/images/Q00037.png",
+    "duration": 10,
+    "choices": [
+      "Shooting bird",
+      "Looking at birds with telescope",
+      "Playing with dog"
+    ],
+    "difficulty": "easy",
+    "answer": "Shooting bird"
+  },
+  {
+    "question": "What is the colour of the horse carriage?",
+    "image": "/images/Q00038.png",
+    "duration": 10,
+    "choices": [
+      "Black",
+      "White",
+      "Brown",
+      "Red"
+    ],
+    "difficulty": "easy",
+    "answer": "Red"
+  },
+  {
+    "question": "How many horses are there in the drawing?",
+    "image": "/images/Q00039.png",
+    "duration": 10,
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "difficulty": "easy",
+    "answer": "2"
+  },
+  {
+    "question": "How many ships are depicted in the drawing?",
+    "image": "/images/Q00040.png",
+    "duration": 10,
+    "choices": [
+      "No ship",
+      "1",
+      "2",
+      "3"
+    ],
+    "difficulty": "easy",
+    "answer": "1"
+  },
+  {
+    "question": "How many boats are there in the drawing?",
+    "image": "/images/Q00041.png",
+    "duration": 15,
+    "choices": [
+      "No boat",
+      "1",
+      "2",
+      "3"
+    ],
+    "difficulty": "easy",
+    "answer": "1"
+  },
+  {
+    "question": "What is NOT depicted in the drawing?",
+    "image": "/images/Q00042.png",
+    "duration": 10,
+    "choices": [
+      "Waterfall",
+      "River",
+      "Ocean"
+    ],
+    "difficulty": "easy",
+    "answer": "Ocean"
+  },
+  {
+    "question": "What is NOT depicted in the drawing?",
+    "image": "/images/Q00043.png",
+    "duration": 10,
+    "choices": [
+      "Waterfall",
+      "River",
+      "Ocean"
+    ],
+    "difficulty": "easy",
+    "answer": "Ocean"
+  },
+  {
+    "question": "What is the colour of vase at the top left?",
+    "image": "/images/Q00044.png",
+    "duration": 10,
+    "choices": [
+      "Red",
+      "Yellow",
+      "Green",
+      "White"
+    ],
+    "difficulty": "easy",
+    "answer": "Green"
+  },
+  {
+    "question": "What is the artist's name?",
+    "image": "/images/Q00045.png",
+    "duration": 20,
+    "choices": [
+      "John George Brown",
+      "George Inness",
+      "Joseph Decker",
+      "Thomas B. Clarke"
+    ],
+    "difficulty": "hard",
+    "answer": "Joseph Decker"
+  },
+  {
+    "question": "In what year did Vincent van Gogh draw the drawing?",
+    "image": "/images/Q00046.png",
+    "duration": 15,
+    "choices": [
+      "1886",
+      "1887",
+      "1888",
+      "1889"
+    ],
+    "difficulty": "medium",
+    "answer": "1889"
+  },
+  {
+    "question": "What season is depicted in the drawing?",
+    "image": "/images/Q00047.png",
+    "duration": 10,
+    "choices": [
+      "Spring",
+      "Summer",
+      "Autumn",
+      "Winter"
+    ],
+    "difficulty": "easy",
+    "answer": "Autumn"
+  },
+  {
+    "question": "Where is the screaming man?",
+    "image": "/images/Q00048.png",
+    "duration": 10,
+    "choices": [
+      "On the road",
+      "On a bridge",
+      "On a boat",
+      "In a jungle"
+    ],
+    "difficulty": "easy",
+    "answer": "On a bridge"
+  },
+  {
+    "question": "What are the 2 white colour animal?",
+    "image": "/images/Q00049.png",
+    "duration": 10,
+    "choices": [
+      "Horses",
+      "Swans",
+      "Birds"
+    ],
+    "difficulty": "easy",
+    "answer": "Swans"
+  },
+  {
+    "question": "What is the colour of the frame?",
+    "image": "/images/Q00050.png",
+    "duration": 10,
+    "choices": [
+      "Brown",
+      "Red",
+      "Black",
+      "White"
+    ],
+    "difficulty": "easy",
+    "answer": "Black"
+  },
+  {
+    "question": "What animal is with the woman?",
+    "image": "/images/Q00051.png",
+    "duration": 10,
+    "choices": [
+      "White dog",
+      "Black dog",
+      "White cat",
+      "Black cat"
+    ],
+    "difficulty": "easy",
+    "answer": "Black dog"
+  }
+]
