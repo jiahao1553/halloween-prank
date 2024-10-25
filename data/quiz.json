@@ -156,7 +156,7 @@
     "answer": "Blue"
   },
   {
-    "question": "How many sunburn?",
+    "question": "How many peopple are sunburned?",
     "image": "/images/Q00013.png",
     "duration": 30,
     "choices": [
@@ -195,7 +195,7 @@
     "answer": "Grey"
   },
   {
-    "question": "How many umbrellas are there?",
+    "question": "How many umbrellas are used as shelters?",
     "image": "/images/Q00016.png",
     "duration": 30,
     "choices": [
@@ -219,45 +219,6 @@
     ],
     "difficulty": "hard",
     "answer": "29"
-  },
-  {
-    "question": "How many striped towels are used as mats?",
-    "image": "/images/Q00018.png",
-    "duration": 30,
-    "choices": [
-      "0",
-      "1",
-      "2",
-      "3"
-    ],
-    "difficulty": "hard",
-    "answer": "2"
-  },
-  {
-    "question": "There is a guy in a suit, what colour is his coat?",
-    "image": "/images/Q00019.png",
-    "duration": 30,
-    "choices": [
-      "Grey",
-      "White",
-      "Blue",
-      "Green"
-    ],
-    "difficulty": "hard",
-    "answer": "Grey"
-  },
-  {
-    "question": "How many umbrellas are there?",
-    "image": "/images/Q00020.png",
-    "duration": 30,
-    "choices": [
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "difficulty": "hard",
-    "answer": "4"
   },
   {
     "question": "What shirt colour does the man in the boat wear?",

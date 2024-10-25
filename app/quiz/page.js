@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Result from '@/components/Result';
 import BloodTrailCursor from '@/components/BloodTrailCursor';
 import { Logtail } from "@logtail/browser";
-const debugMode = false;
+const debugMode = true;
 const logtail = new Logtail("xnwpQrt6L7BK3o5nyn2xsdc4");
 
 const getQuizID = () => {
@@ -95,11 +95,6 @@ const Quiz = () => {
 
   const handleAnswer = (choice) => {
     setImageLoaded(false)
-    if (Math.random() > 0.5) {
-      laugh1.current.play();
-    } else {
-      laugh2.current.play();
-    }
 
     setTimeout(() => {
       const logData = {
@@ -113,9 +108,11 @@ const Quiz = () => {
         timestamp: new Date().toISOString()
       };
       if (choice === currentQuestion.answer) {
+        laugh1.current.play();
         logtail.info({ ...logData, isCorrect: true });
         setCorrectAnswers(correctAnswers + 1);
       } else {
+        laugh2.current.play();
         logtail.info({ ...logData, isCorrect: false });
       }
       if (currentQuestionIndex + 1 < 5) {
@@ -124,9 +121,11 @@ const Quiz = () => {
       } else {
         setShowResult(true);
         logtail.info({ quizID, correctAnswers, totalQuestions: questions.length, result: getResult(correctAnswers, questions.length) });
-        setTimeout(() => {
-          router.push('/');
-        }, 10000);
+        if (!debugMode){
+          setTimeout(() => {
+            router.push('/');
+          }, 10000);
+        }
       }
     }, 2000);
     logtail.flush();
@@ -159,7 +158,7 @@ const Quiz = () => {
               <Image
                 src={currentQuestion.image}
                 alt="Quiz Image"
-                priority
+                priority={true}
                 layout='fill'
                 objectFit='contain'
                 onLoad={handleImageLoad}
