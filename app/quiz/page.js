@@ -16,10 +16,17 @@ const Quiz = () => {
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [showChoices, setShowChoices] = useState(false);
   const [showResult, setShowResult] = useState(false);
+  const [showChoiceTime, setShowChoiceTime] = useState(null);
   const [timeRemaining, setTimeRemaining] = useState(0);
   const tick = useRef(null);
   const laugh1 = useRef(null);
   const laugh2 = useRef(null);
+
+  const getQuizID = () => {
+    return new Date().toISOString().replace(/-|:/g, '').split('.')[0];
+  }
+
+  const quizID = getQuizID();
 
   // Function to get random question of specific difficulty
   const getRandomQuestionByDifficulty = (difficulty, questionsToExclude = []) => {
@@ -59,6 +66,7 @@ const Quiz = () => {
   const handleImageLoad = () => {
     setImageLoaded(true);
     setTimeout(() => {
+      setShowChoiceTime(new Date().toISOString());
       setShowChoices(true);
     }, currentQuestion.duration * 1000);
   };
@@ -87,8 +95,12 @@ const Quiz = () => {
     }
 
     setTimeout(() => {
+      const logs = [quizID, currentQuestionIndex, currentQuestion.image, currentQuestion.question, choice, currentQuestion.answer, showChoiceTime, new Date().toISOString()];
       if (choice === currentQuestion.answer) {
+        console.log(...logs, "C");
         setCorrectAnswers(correctAnswers + 1);
+      } else {
+        console.log(...logs, "NC");
       }
       if (currentQuestionIndex + 1 < 5) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
