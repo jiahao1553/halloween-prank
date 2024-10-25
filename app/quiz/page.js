@@ -75,7 +75,7 @@ const Quiz = () => {
   };
 
   const getResult = (correctAnswers, totalQuestions) => {
-    return correctAnswers >= totalQuestions * 0.6;
+    return correctAnswers > totalQuestions * 0.6;
   }
 
   useEffect(() => {
