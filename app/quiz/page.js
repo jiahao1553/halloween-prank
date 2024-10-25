@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Result from '@/components/Result';
 import BloodTrailCursor from '@/components/BloodTrailCursor';
 import { Logtail } from "@logtail/browser";
-
+const debugMode = false;
 const logtail = new Logtail("xnwpQrt6L7BK3o5nyn2xsdc4");
 
 const getQuizID = () => {
@@ -71,7 +71,7 @@ const Quiz = () => {
     setTimeout(() => {
       setShowChoiceTime(new Date().toISOString());
       setShowChoices(true);
-    }, currentQuestion.duration * 1000);
+    }, !debugMode ? currentQuestion.duration * 1000 : 1000);
   };
 
   const getResult = (correctAnswers, totalQuestions) => {
@@ -114,6 +114,7 @@ const Quiz = () => {
       };
       if (choice === currentQuestion.answer) {
         logtail.info({ ...logData, isCorrect: true });
+        setCorrectAnswers(correctAnswers + 1);
       } else {
         logtail.info({ ...logData, isCorrect: false });
       }
@@ -122,7 +123,7 @@ const Quiz = () => {
         loadQuestion(questions[currentQuestionIndex + 1]);
       } else {
         setShowResult(true);
-        logtail.info({ quizID, correctAnswers, totalQuestions, result: getResult(correctAnswers, totalQuestions) });
+        logtail.info({ quizID, correctAnswers, totalQuestions: questions.length, result: getResult(correctAnswers, questions.length) });
         setTimeout(() => {
           router.push('/');
         }, 10000);
@@ -132,7 +133,7 @@ const Quiz = () => {
   };
 
   if (showResult) {
-    return <Result result={getResult(correctAnswers, totalQuestions)} correctAnswers={correctAnswers} totalQuestions={questions.length} />;
+    return <Result result={getResult(correctAnswers, questions.length)} correctAnswers={correctAnswers} totalQuestions={questions.length} />;
   }
 
   if (!currentQuestion) return <p className='text-center m-5'>Loading...</p>;
