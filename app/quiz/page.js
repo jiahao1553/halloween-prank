@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Result from '@/components/Result';
 import BloodTrailCursor from '@/components/BloodTrailCursor';
 import { Logtail } from "@logtail/browser";
-const debugMode = true;
+const debugMode = false;
 const logtail = new Logtail("xnwpQrt6L7BK3o5nyn2xsdc4");
 
 const getQuizID = () => {
