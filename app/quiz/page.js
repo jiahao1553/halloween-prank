@@ -6,6 +6,15 @@ import Status from '@/components/Status';
 import Image from 'next/image';
 import Result from '@/components/Result';
 import BloodTrailCursor from '@/components/BloodTrailCursor';
+import { Logtail } from "@logtail/browser";
+
+const logtail = new Logtail("xnwpQrt6L7BK3o5nyn2xsdc4");
+
+const getQuizID = () => {
+  return new Date().toISOString().replace(/-| |:|\.|T|Z/g, '');
+}
+
+const quizID = getQuizID();
 
 const Quiz = () => {
   const router = useRouter();
@@ -21,12 +30,6 @@ const Quiz = () => {
   const tick = useRef(null);
   const laugh1 = useRef(null);
   const laugh2 = useRef(null);
-
-  const getQuizID = () => {
-    return new Date().toISOString().replace(/-|:/g, '').split('.')[0];
-  }
-
-  const quizID = getQuizID();
 
   // Function to get random question of specific difficulty
   const getRandomQuestionByDifficulty = (difficulty, questionsToExclude = []) => {
@@ -71,6 +74,10 @@ const Quiz = () => {
     }, currentQuestion.duration * 1000);
   };
 
+  const getResult = (correctAnswers, totalQuestions) => {
+    return correctAnswers >= totalQuestions * 0.6;
+  }
+
   useEffect(() => {
     const timer = setInterval(() => {
       if (imageLoaded && timeRemaining > 1) {
@@ -95,27 +102,37 @@ const Quiz = () => {
     }
 
     setTimeout(() => {
-      const logs = [quizID, currentQuestionIndex, currentQuestion.image, currentQuestion.question, choice, currentQuestion.answer, showChoiceTime, new Date().toISOString()];
+      const logData = {
+        quizID,
+        currentQuestionIndex,
+        questionImage: currentQuestion.image,
+        question: currentQuestion.question,
+        choice,
+        correctAnswer: currentQuestion.answer,
+        showChoiceTime,
+        timestamp: new Date().toISOString()
+      };
       if (choice === currentQuestion.answer) {
-        console.log(...logs, "C");
-        setCorrectAnswers(correctAnswers + 1);
+        logtail.info({ ...logData, isCorrect: true });
       } else {
-        console.log(...logs, "NC");
+        logtail.info({ ...logData, isCorrect: false });
       }
       if (currentQuestionIndex + 1 < 5) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
         loadQuestion(questions[currentQuestionIndex + 1]);
       } else {
         setShowResult(true);
+        logtail.info({ quizID, correctAnswers, totalQuestions, result: getResult(correctAnswers, totalQuestions) });
         setTimeout(() => {
           router.push('/');
         }, 10000);
       }
     }, 2000);
+    logtail.flush();
   };
 
   if (showResult) {
-    return <Result correctAnswers={correctAnswers} totalQuestions={5} />;
+    return <Result result={getResult(correctAnswers, totalQuestions)} correctAnswers={correctAnswers} totalQuestions={questions.length} />;
   }
 
   if (!currentQuestion) return <p className='text-center m-5'>Loading...</p>;
