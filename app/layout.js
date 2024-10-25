@@ -1,5 +1,6 @@
+import { Analytics } from '@vercel/analytics/react';
+import { Creepster, Inter, Rubik_Wet_Paint } from 'next/font/google';
 import "./globals.css";
-import { Inter, Creepster, Rubik_Wet_Paint } from 'next/font/google'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -8,13 +9,13 @@ const inter = Inter({
 
 const creepster = Creepster({
   subsets: ['latin'],
-  weight: [ '400'],
+  weight: ['400'],
   variable: "--font-creepster",
 })
 
 const rubik = Rubik_Wet_Paint({
   subsets: ['latin'],
-  weight: [ '400'],
+  weight: ['400'],
   variable: "--font-rubik",
 })
 
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         className={`${inter.variable} ${creepster.variable} ${rubik.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
