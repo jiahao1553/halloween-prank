@@ -51,9 +51,9 @@ export default function Home() {
       <div>
         <div className="relative-parent flex flex-col justify-center items-center h-screen">
           <h1 className="text-red-600 text-8xl p-4 mb-8 font-creepster">Long Lost Memory</h1>
-          <p className="font-rubik text-slate-400">Recall the hidden details from ancient, eerie drawings. Answer 2 out of 3 questions correctly to escape.</p>
+          <p className="font-rubik text-slate-400">Recall the hidden details from ancient, eerie drawings.</p>
           <br></br>
-          <p><b>How to Play:</b> You will glimpse 5 drawings, one by one. Each image will disappear after a brief. After each image vanishes, a question will emerge, probing your memory for details lost to time. No second chances—rely on your wits alone. Answer at least 4 questions correctly to survive the trial.</p>
+          <p><b>How to Play:</b> You will glimpse 5 drawings, one by one. Each image will disappear after a brief. After each image vanishes, a question will emerge, probing your memory for details lost to time. No second chances—rely on your wits alone. Answer at least 4 questions correctly to survive.</p>
           <Link className="bg-blue-500 hover:bg-blue-700 text-white font-rubik my-4 py-2 px-4 rounded" href="/quiz">Play Game</Link>
         </div>
       </div>
